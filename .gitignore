@@ -1,0 +1,31 @@
+# Ignore logs
+*.log
+
+# Ignore Trivy scan reports
+#trivy_report.txt
+#trivy_scan.json
+
+# Ignore Terraform state files and backup
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# Optional: Ignore Terraform crash logs, CLI caches, and .terraform dir
+**/.terraform/
+.crash.log
+*.tfplan
+
+# Node-related (if node_modules were added later)
+node-ecs-app/app/node_modules/
+
+# OS / Editor files
+.DS_Store
+*.swp
+*.swo
+*.bak
+
+# Shell history (if present)
+*.sh~
+
+# Ignore dead.letter files
+dead.letter
+
